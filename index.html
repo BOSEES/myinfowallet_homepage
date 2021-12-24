@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/index.css">
+  <script src="./js/index.js" defer></script>
+  <script src="./js/create_member.js" defer></script>
+  <script src="./js/scroll.js" defer></script>
 </head>
 <body>
   <!-- navbar -->
@@ -31,19 +35,42 @@
 
   <!-- About Us -->
   <section class="about">
-    <h2>About Us</h2>
-    <hr>
-    <div class="about__description">
-      <h4>asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk</h4>
+    <div class="about__intro">
+      <h2>About Us</h2>
+      <hr>
+      <div class="about__description">
+        <h4 class="about__page1">asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdasdashfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+        </h4>
+        <h4 class="about__page2 hide">asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+          asdfasdhjfaksjdhasdasdfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+        </h4>
+        <div class="page__dot">
+          <div class="dot1 dotOn"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
     </div>
     <div class="about__item1 parallax">
       <div class="item1__description">
-        <h2>asdasdasdasda</h2>
+        <h2 class="item1__text">asdasdasdasda</h2>
       </div>
     </div>
     <div class="about__item2 parallax">
       <div class="item2__description">
-        <h2>asdasdasdasda</h2>
+        <h2 class="item2__text">asdasdasdasda</h2>
       </div>
     </div>
   </section>
@@ -55,18 +82,38 @@
     </div>
     <div class="members parallax">
       <div class="members__container">
-        <div class="member">
-          <span class="member__avatar">
-            <img src="./images/member.png" alt="사진">
-          </span>
-          <span class="member__profile">
-            <h3 class="member__name">아이유</h3>
-            <h4 class="member__position"> Front-end</h4>
-            <h5 class="member__career">asdasdasdasdasdasasdasdasdasdasasdasdasdasddasdasdasasdasd</h5>
-          </span>
-        </div>
       </div>
     </div>
   </section>
+
+  <!-- Contact -->
+  <footer class="contact">
+    <div class="test">
+      <div class="contact__company">
+        <h4 class="contact__title">COMPANY INFO</h4>
+        <div class="contact__description">
+          <span class="contact__subtitle">대표</span>
+          <span class="contact__data" >김종현</span>
+          <span class="contact__subtitle">사업자등록번호 </span>
+          <span class="contact__data">12931828172</span>
+          <span class="contact__subtitle">기업명</span>
+          <span class="contact__data">데이터 랩스</span>
+        </div>
+        <span class="contact__subtitle">주소</span>
+        <span class="contact__data">서울시 성동구 마장동 192831</span>
+        <h4>COPYRIGHT &copy 2022 DATA LABS ALL RIGHTS RESERVED</h4>
+      </div>
+      <div class="contact__customer">
+        <h4 class="contact__title">CUSTOMER</h4>
+        <div class="contact__description">
+          <span class="contact__subtitle">대표번호 </span>
+          <span class="contact__data">010-2222-2222</span>
+          <span class="contact__subtitle">메일 </span>
+          <span class="contact__data">awdjralwr@awlkdjrl.com</span>
+        </div>
+        <span class="contact__data">평일 09:00 ~ 18:00(점심 12:00~13:00) 주말, 공휴일 제외</span>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

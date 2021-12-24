@@ -1,0 +1,40 @@
+{
+  "members": [
+    {
+      "avatar": "./images/member.png",
+      "name": "아이유",
+      "position": "Front-end",
+      "description": "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"
+    },
+    {
+      "avatar": "./images/member.png",
+      "name": "아이유",
+      "position": "Front-end",
+      "description": "asdasdasd"
+    },
+    {
+      "avatar": "./images/member.png",
+      "name": "아이유",
+      "position": "Front-end",
+      "description": "asdasdasd"
+    },
+    {
+      "avatar": "./images/member.png",
+      "name": "아이유",
+      "position": "Front-end",
+      "description": "asdasdasd"
+    },
+    {
+      "avatar": "./images/member.png",
+      "name": "아이유",
+      "position": "Front-end",
+      "description": "asdasdasd"
+    },
+    {
+      "avatar": "./images/member.png",
+      "name": "아이유",
+      "position": "Front-end",
+      "description": "asdasdasd"
+    }
+  ]
+}
