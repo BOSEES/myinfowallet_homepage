@@ -7,10 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/index.css">
   <script src="./js/index.js" defer></script>
-  <script src="./js/create_member.js" defer></script>
+  <script src="./js/createMember.js" defer></script>
   <script src="./js/scroll.js" defer></script>
+  <script src="/js/slideShow.js" defer></script>
 </head>
 <body>
+
   <!-- navbar -->
   <nav class="navbar">
     <div class="navbar__logo">
@@ -18,28 +20,60 @@
     </div>
     <div class="navbar__menu">
       <ul class="navbar__menu">
-        <li class="navbar__menu__item">Home</li>
-        <li class="navbar__menu__item">About Us</li>
-        <li class="navbar__menu__item">Team</li>
-        <li class="navbar__menu__item">채용</li>
+        <li class="navbar__menu__item">
+          <a href="./index.html">Home</a></li>
+        <li class="navbar__menu__item">
+          <a href="./technology.html">Technology</a>
+        </li>
+        <li class="navbar__menu__item">
+          <a href="./technology.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Home -->
-  <section class="home parallax" >
-    <div class="content">
-      <h1>Data labs</h1>
+  <section class="home">
+    <div id="slideShow">
+      <ul class="slides">
+        <li class="slides__banner1">
+          <div>
+            <h1 class="banner__title">Data Labs.</h1>
+            <h3 class="banner__description">Leading blockchain-based innovation.</h3>
+          </div>
+        </li>
+        <li class="slides__banner2">
+          <div>
+            <h1 class="banner__title">Data Labs.</h1>
+            <h3 class="banner__description">Leading blockchain-based innovation.</h3>
+          </div>
+        </li>
+        <li class="slides__banner3">
+          <div>
+            <h1 class="banner__title">Data Labs.</h1>
+            <h3 class="banner__description">Leading blockchain-based innovation.</h3>
+          </div>
+        </li>
+      </ul>
     </div>
+      <div class="controller">
+        <h4 class="slide__count">01</h4>
+        <div class="slide__gauge">
+          <div class="slide__gauge__value" style="width: 33%; height: 4px; background-color: white;"></div>
+        </div>
+        <h4 class="slide__total">03</h4>
+        <div class="arrow prev">&lang;</div>
+        <div class="arrow next">&rang;</div>
+      </div>
   </section>
 
-  <!-- About Us -->
-  <section class="about">
-    <div class="about__intro">
-      <h2>About Us</h2>
+  <!-- Vision -->
+  <section class="vision">
+    <div class="vision__intro">
+      <h2>Vision</h2>
+      <h4>투명하고 안전하게 데이터(컨텐츠)를 공유하는 세상(ABCD)을 선도</h4>
       <hr>
-      <div class="about__description">
-        <h4 class="about__page1">asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+      <div class="vision__description">
+        <h4 class="vision__page1">asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdasdashfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
@@ -51,7 +85,7 @@
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
         </h4>
-        <h4 class="about__page2 hide">asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
+        <h4 class="vision__page2 hide">asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
           asdfasdhjfaksjdhfjkasdhfkjasdhfkhasdkjfhasdfjhkajsdfhasdasdasdjk
@@ -63,23 +97,35 @@
         </div>
       </div>
     </div>
-    <div class="about__item1 parallax">
+    <div class="vision__item1 parallax">
       <div class="item1__description">
-        <h2 class="item1__text">asdasdasdasda</h2>
+        <h3 class="item1__text">플랫폼 사업자가 아닌 개인이 데이터를 집적 소유</h3>
       </div>
     </div>
-    <div class="about__item2 parallax">
+    <div class="vision__item2 parallax">
       <div class="item2__description">
-        <h2 class="item2__text">asdasdasdasda</h2>
+        <h3 class="item2__text">인터넷의 다음 세대인 데이터 간 네트워크 세상을 지향</h3>
       </div>
     </div>
   </section>
+
+  <!-- Management philosophy -->
+  <div class="management">
+    <h2>Management philosophy</h2>
+    <h4>자율과 그에 따른 책음을 준수하는 회사</h4>
+    <hr>
+    <div class="management parallax">
+      <div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Team -->
   <section class="team">
     <h2>Team</h2>
+    <h4>우리는 팀이다!!</h4>
     <hr>
-    <div class="team_description">
-      <h4>우리는 팀이다!!</h4>
-    </div>
     <div class="members parallax">
       <div class="members__container">
       </div>
