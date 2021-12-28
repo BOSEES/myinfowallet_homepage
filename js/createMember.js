@@ -1,4 +1,6 @@
-const memberContainer = document.querySelector(".members__container");
+const executive = document.querySelector(".executive");
+const planner = document.querySelector(".planner");
+const developer = document.querySelector(".developer");
 
 const loadMember = () => {
   return fetch("asset/member_data.json")
@@ -7,7 +9,7 @@ const loadMember = () => {
 }
 
 const createMember = (member) => {
-    const { avatar, name, position, description } = member;
+    const { department, avatar, name, position, description } = member;
     const elSpan = document.createElement("span");
     const elDivAvatar = document.createElement("div");
     const elImg = document.createElement("img");
@@ -37,7 +39,13 @@ const createMember = (member) => {
     elSpan.append(elDivAvatar);
     elSpan.append(elDivProfile);
   
-    memberContainer.append(elSpan);
+    if (department === "executive") {
+      executive.append(elSpan);
+    } else if (department === "planner") {
+      planner.append(elSpan);
+    } else {
+      developer.append(elSpan);
+    }
 }
 
 loadMember()

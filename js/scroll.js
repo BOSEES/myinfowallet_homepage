@@ -8,7 +8,7 @@ const handleScrollEvent = () => {
     onChengeNavbar(0);
   }
 
-  if (window.pageYOffset > item1.getBoundingClientRect().top) {
+  if (window.pageYOffset > item1.getBoundingClientRect().top + 1000) {
     onChangeItemDesctiption(1, document.querySelector(".item1__text"));
   } else {
     onChangeItemDesctiption(0, document.querySelector(".item1__text"));
