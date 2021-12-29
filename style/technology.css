@@ -1,0 +1,89 @@
+#banner {
+  background-image: url("../images/banner.png");
+  background-size: cover;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+}
+
+.banner__textBox {
+  width: 100%;
+  padding-left: 15vw;
+}
+
+.banner__title {
+  margin:0;
+}
+
+.banner__subtitle {
+  margin:0;
+}
+
+#technology {
+  background-image: url("../images/turtle1.png");
+  background-size: cover;
+  padding-top: 10rem;
+  width: 100%;
+  height: 70rem;
+}
+
+.technology__title {
+  display: flex;
+  justify-content: center;
+}
+
+.technology__title > h1 {
+  width: 50%;
+  word-wrap: break-word;
+}
+
+.technology__img {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: right;
+}
+
+.technology__img > img {
+  width: 75%;
+  height:40rem;
+}
+
+#why {
+  text-align: center;
+  height: 100vh;
+}
+
+.why__article {
+  height: 100vh;
+}
+
+.why__container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.why__img {
+  width: 40%;
+  height: 100%;
+  background-attachment: fixed;
+}
+
+.why__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 60%;
+}
+
+.why__container.list-1 > .why__img {
+  background-image: url("../images/turtle1.png");
+}
+.why__container.list-2 > .why__img{
+  background-image: url("../images/turtle2.png");
+}
+.why__container.list-3 > .why__img{
+  background-image: url("../images/turtle3.png");
+}

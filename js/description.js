@@ -1,13 +1,8 @@
-const navbar = document.querySelector(".navbar");
+// const navbar = document.querySelector(".navbar");
 const item1 = document.querySelector(".item1__description");
 const item2 = document.querySelector(".item2__description");
-const handleScrollEvent = () => {
-  if (window.pageYOffset > 250) {
-    onChengeNavbar(1);
-  } else {
-    onChengeNavbar(0);
-  }
 
+const handleDescription = () => {
   if (window.pageYOffset > item1.getBoundingClientRect().top + 1000) {
     onChangeItemDesctiption(1, document.querySelector(".item1__text"));
   } else {
@@ -18,15 +13,6 @@ const handleScrollEvent = () => {
     onChangeItemDesctiption(1, document.querySelector(".item2__text"));
   } else {
     onChangeItemDesctiption(0, document.querySelector(".item2__text"));
-  }
-
-}
-
-const onChengeNavbar = (flag) => {
-  if (flag) {
-    navbar.classList.add("on");
-  } else {
-    navbar.classList.remove("on");
   }
 }
 
@@ -53,4 +39,4 @@ const toFitScroll = (callback) => {
   }
 }
 
-window.addEventListener("scroll", toFitScroll(handleScrollEvent), { pasive: true });
+window.addEventListener("scroll", toFitScroll(handleDescription), { pasive: true });

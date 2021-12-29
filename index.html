@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/global.css">
   <link rel="stylesheet" href="./style/index.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style/navbar.css">
   <script src="./js/index.js" defer></script>
+  <script src="./js/navbar.js" defer></script>
   <script src="./js/createMember.js" defer></script>
-  <script src="./js/scroll.js" defer></script>
-  <script src="/js/slideShow.js" defer></script>
+  <script src="./js/description.js" defer></script>
+  <script src="./js/slideShow.js" defer></script>
 </head>
 <body>
-
   <!-- navbar -->
   <nav class="navbar">
     <div class="navbar__logo">
@@ -27,7 +28,7 @@
           <a href="./technology.html">Technology</a>
         </li>
         <li class="navbar__menu__item">
-          <a href="./technology.html">Contact Us</a></li>
+          <a href="./contact.html">Contact Us</a></li>
       </ul>
     </div>
   </nav>
@@ -207,11 +208,11 @@
     <hr>
     <div class="members parallax">
       <div class="member__CEO">
-        <div>
-          <h3>김종현 / Founder & CEO</h3>
-          <h4>서울대학교 학사/석사</h4>
-          <h4>Univ. of Texas at Austin, 박사</h4>
-          <ul>
+        <div class="CEO__profile">
+          <h3 class="CEO__name">김종현 / Founder & CEO</h3>
+          <h4 class="CEO__univ">서울대학교 학사/석사</h4>
+          <h4 class="CEO__univ">Univ. of Texas at Austin, 박사</h4>
+          <ul class="CEO__ing">
             <li>블록체인랩스(2020~2021)</li>
             <li>과기정통부 블록체인 PM(2018~2020)</li>
             <li>아주대학교 교수(2015~2018)</li>

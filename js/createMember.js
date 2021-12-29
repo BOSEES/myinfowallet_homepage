@@ -39,13 +39,9 @@ const createMember = (member) => {
     elSpan.append(elDivAvatar);
     elSpan.append(elDivProfile);
   
-    if (department === "executive") {
-      executive.append(elSpan);
-    } else if (department === "planner") {
-      planner.append(elSpan);
-    } else {
-      developer.append(elSpan);
-    }
+    if (department === "executive") executive.append(elSpan);
+    else if (department === "planner") planner.append(elSpan);
+    else developer.append(elSpan);
 }
 
 loadMember()
