@@ -1,6 +1,8 @@
+/* banner */
 #banner {
   background-image: url("../images/banner.png");
   background-size: cover;
+  background-attachment: fixed;
   height: 35rem;
   display: flex;
   align-items: center;
@@ -19,17 +21,30 @@
   margin:0;
 }
 
+/* Technology */
+
 #technology {
-  background-image: url("../images/turtle1.png");
+  background-color: khaki;
   background-size: cover;
   padding-top: 10rem;
   width: 100%;
-  height: 70rem;
+  height: 100rem;
 }
 
-.technology__title {
+.technology__intro {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.technology__description {
+  width: 30rem;
+  line-height: 1.9;
+}
+
+.technology__description > h4 {
+  font-size: 1.2rem;
 }
 
 .technology__title > h1 {
@@ -37,21 +52,52 @@
   word-wrap: break-word;
 }
 
-.technology__img {
+.technology__img__container {
   width: 100%;
   height: 70%;
   display: flex;
   justify-content: right;
+  transition: 0.5s ease-out;
 }
 
-.technology__img > img {
+.technology__img {
   width: 75%;
   height:40rem;
+  animation: leftSlide 1s;
 }
 
+.intro__card__container {
+  position: relative;
+}
+.intro__card {
+  position: absolute;
+  background-color: blueviolet;
+  padding:10rem 10rem 0 10rem;
+  width: 30vw;
+  line-height: 1.5;
+  left:10vw;
+  bottom: 15rem;
+  animation: rightSlide 1s;
+}
+
+.intro__title {
+  font-size: 2rem;
+}
+
+.intro__description {
+  font-size: 1.2rem;
+}
+
+
+/* Why Blockchain */
+
 #why {
-  text-align: center;
+  margin-top: 10rem;
   height: 100vh;
+}
+
+.why__title {
+  text-align: center;
 }
 
 .why__article {
@@ -74,8 +120,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   width: 60%;
+  
 }
 
 .why__container.list-1 > .why__img {
@@ -86,4 +132,55 @@
 }
 .why__container.list-3 > .why__img{
   background-image: url("../images/turtle3.png");
+}
+
+.desciription__head {
+  display: flex;
+}
+
+.description__title {
+}
+
+.description__container {
+  width: 35vw;
+  position: relative;
+  line-height: 1.9;
+}
+
+
+.description__number {
+  position: absolute;
+  font-size: 8rem;
+  margin:0;
+  left: -5rem;
+  top: -5rem;
+  opacity: 0.1;
+}
+
+.description__text {
+  font-size: 1.2rem;
+}
+
+/* Animation */
+
+@keyframes leftSlide {
+  from {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

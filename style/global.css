@@ -34,6 +34,8 @@ body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   padding: 0;
+  word-wrap: break-word;
+  word-break: keep-all;
 }
 
 ul {
@@ -65,26 +67,31 @@ a:hover {
 h1 {
   font-weight: var(--weight-blod);
   font-size: var(--size-large);
+  margin:0;
 }
 
 h2 {
   font-weight: var(--weight-blod);
   font-size: var(--size-medium);
+  margin:0;
 }
 
 h3 {
   font-weight: var(--weight-blod);
   font-size: var(--size-small);
+  margin:0;
 }
 
 h4 {
   font-weight: var(--weight-normal);
   font-size: var(--size-XSmall);
+  margin:0;
 }
 
 h5 {
   font-weight: var(--weight-normal);
   font-size: var(--size-XXSmall);
+  margin:0;
 }
 
 hr {
@@ -93,6 +100,7 @@ hr {
   border-radius: var(--border-radius);
   background-color: var(--color-gray);
   border: 0;
+  margin-bottom: 3rem;
 }
 
 div {

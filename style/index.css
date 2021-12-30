@@ -191,17 +191,11 @@
 }
 
 .item1__text {
-  display: none;
   animation: slideninRight 1.3s;
 }
 
 .item2__text {
-  display: none;
   animation: slideninLeft 1.3s;
-}
-
-.textOn {
-  display: block;
 }
 
 .vision__item2.parallax {
