@@ -367,37 +367,6 @@
   height: 5rem;
 }
 
-/* Contact */
-
-.contact {
-  background-color: #fcfcfc;
-  display: flex;
-  justify-content: center;
-  padding:5rem;
-}
-
-.contact__box {
-  width: 70rem;
-  display: flex;
-  justify-content: space-between;
-}
-
-.contact__description {
-  display: flex;
-  text-align: center;
-}
-
-.contact__subtitle {
-  color: #abb4c1;
-  font-weight: var(--weight-blod);
-  margin-right: 0.5rem;
-}
-
-.contact__data {
-  margin-right: 2rem;
-}
-
-
 /* Animation Keyframes */
 @keyframes pageFold {
   from {

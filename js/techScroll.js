@@ -1,22 +1,31 @@
 const introImage = document.querySelector(".technology__img__container");
 const introCard = document.querySelector(".intro__card__container");
-let imageFlag = true;
-let cardFlag = true;
+const whitePaper = document.querySelector(".datachain__info__container");
 
-
-const OnIntroImage = () => {
-  if (window.pageYOffset >= introImage.getBoundingClientRect().top && introImage) {
+const onIntroImage = () => {
+  if (window.pageYOffset >= introImage.getBoundingClientRect().top) {
     document.querySelector(".technology__img").classList.remove("hide");
-    window.removeEventListener("scroll", OnIntroImage);
+    window.removeEventListener("scroll", onIntroImage);
   }
 }
 
-const OnIntroCard = () => {
-  if (window.pageYOffset >= introCard.getBoundingClientRect().top && cardFlag) {
+const onIntroCard = () => {
+  if (window.pageYOffset >= introCard.getBoundingClientRect().top) {
     document.querySelector(".intro__card").classList.remove("hide");
-    window.removeEventListener("scroll", OnIntroCard);
+    window.removeEventListener("scroll", onIntroCard);
   }
 }
 
-window.addEventListener("scroll", OnIntroImage);
-window.addEventListener("scroll", OnIntroCard);
+const onWhitePaper = () => {
+  const target = whitePaper.getBoundingClientRect().top + window.pageYOffset;
+  console.log(window.pageYOffset);
+  console.log(target);
+  if (window.pageYOffset >= target - 1000) {
+    document.querySelector(".datachain__info").classList.remove("hide");
+    window.removeEventListener("scroll", onWhitePaper);
+  }
+}
+
+window.addEventListener("scroll", onIntroImage);
+window.addEventListener("scroll", onIntroCard);
+window.addEventListener("scroll", onWhitePaper);
