@@ -1,11 +1,12 @@
 /* banner */
 #banner {
-  background-image: url("../images/banner.png");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/technology.webp");
   background-size: cover;
   background-attachment: fixed;
   height: 35rem;
   display: flex;
   align-items: center;
+  color:white;
 }
 
 .banner__textBox {
@@ -65,6 +66,7 @@
   width: 75%;
   height:40rem;
   animation: leftSlide 1s;
+  filter: brightness(50%);
 }
 
 .intro__card__container {
@@ -116,6 +118,8 @@
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+  filter: brightness(50%);
 }
 
 .why__description {
@@ -127,13 +131,13 @@
 }
 
 .why__container.list-1 > .why__img {
-  background-image: url("../images/banner.png");
+  background-image: url("../images/주권.jpg");
 }
 .why__container.list-2 > .why__img{
-  background-image: url("../images/banner.png");
+  background-image: url("../images/탈중앙.jpg");
 }
 .why__container.list-3 > .why__img{
-  background-image: url("../images/banner.png");
+  background-image: url("../images/투명원장.webp");
 }
 
 .desciription__head {
@@ -166,7 +170,7 @@
 /* Data Chain */
 
 #datachain {
-  background-color: burlywood;
+  background-color: ghostwhite;
   height: 30rem;
   margin-top: 10rem;
 }
