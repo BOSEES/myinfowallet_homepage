@@ -1,29 +1,24 @@
-/* Contact */
+/* footer */
 
-.contact {
-  background-color: #fcfcfc;
-  display: flex;
-  justify-content: center;
-  padding:5rem;
+#footer {
+  /* height: 4rem; */
+  background-color: black;
+  color: gray;
+  padding: 2rem 5rem 2rem 5rem;
 }
 
-.contact__box {
-  width: 70rem;
+.footer__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.contact__description {
+.footer__description {
   display: flex;
-  text-align: center;
+  justify-content: space-between;
+  width: 15rem;
 }
 
-.contact__subtitle {
-  color: #abb4c1;
-  font-weight: var(--weight-blod);
-  margin-right: 0.5rem;
-}
-
-.contact__data {
-  margin-right: 2rem;
+.footer__logo {
+  width: 3rem;
 }

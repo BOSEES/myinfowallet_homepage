@@ -32,15 +32,15 @@
 }
 
 .slides__banner1 {
-  background-image: url("../images/turtle1.png");
+  background-image: url("../images/banner.png");
 }
 
 .slides__banner2 {
-  background-image: url("../images/turtle2.png");
+  background-image: url("../images/banner.png");
 }
 
 .slides__banner3 {
-  background-image: url("../images/turtle3.png");
+  background-image: url("../images/banner.png");
 }
 
 .slides__banner1,
@@ -176,7 +176,7 @@
 }
 
 .vision__item1.parallax {
-  background-image: url("../images/banne2r.jpg");
+  background-image: url("../images/banner.png");
 }
 
 .item1__description,
@@ -247,6 +247,10 @@
 
 .management__text {
   width: 10rem;
+}
+
+.management__title {
+  margin-bottom: 3rem;
 }
 
 .management__lists {

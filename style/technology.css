@@ -24,7 +24,7 @@
 /* Technology */
 
 #technology {
-  background-color: khaki;
+  /* background-color: khaki; */
   background-size: cover;
   padding-top: 10rem;
   width: 100%;
@@ -58,6 +58,7 @@
   display: flex;
   justify-content: right;
   transition: 0.5s ease-out;
+  z-index: 0;
 }
 
 .technology__img {
@@ -71,13 +72,14 @@
 }
 .intro__card {
   position: absolute;
-  background-color: blueviolet;
-  padding:10rem 10rem 0 10rem;
+  background-color: white;
+  padding:10vh 10vw 0 10vw;
   width: 30vw;
   line-height: 1.5;
   left:10vw;
-  bottom: 15rem;
+  bottom: 30rem;
   animation: rightSlide 1s;
+  z-index: 1;
 }
 
 .intro__title {
@@ -92,7 +94,6 @@
 /* Why Blockchain */
 
 #why {
-  margin-top: 10rem;
   height: auto;
 }
 
@@ -114,6 +115,7 @@
   width: 40%;
   height: 100%;
   background-attachment: fixed;
+  background-size: cover;
 }
 
 .why__description {
@@ -125,13 +127,13 @@
 }
 
 .why__container.list-1 > .why__img {
-  background-image: url("../images/turtle1.png");
+  background-image: url("../images/banner.png");
 }
 .why__container.list-2 > .why__img{
-  background-image: url("../images/turtle2.png");
+  background-image: url("../images/banner.png");
 }
 .why__container.list-3 > .why__img{
-  background-image: url("../images/turtle3.png");
+  background-image: url("../images/banner.png");
 }
 
 .desciription__head {
@@ -191,6 +193,7 @@
   border-radius: 50px;
   font-weight: bold;
   cursor: pointer;
+  transition: 0.3s ease-out;
 }
 
 .info__button:hover {

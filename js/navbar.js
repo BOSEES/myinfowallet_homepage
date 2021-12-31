@@ -9,7 +9,7 @@ const onChengeNavbar = (flag) => {
 }
 
 window.addEventListener("scroll", () => {
-  if (window.pageYOffset > 250) {
+  if (window.pageYOffset > 100) {
     onChengeNavbar(1);
   } else {
     onChengeNavbar(0);

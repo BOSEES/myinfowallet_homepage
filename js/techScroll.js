@@ -20,7 +20,7 @@ const onWhitePaper = () => {
   const target = whitePaper.getBoundingClientRect().top + window.pageYOffset;
   console.log(window.pageYOffset);
   console.log(target);
-  if (window.pageYOffset >= target - 1000) {
+  if (window.pageYOffset >= target - 500) {
     document.querySelector(".datachain__info").classList.remove("hide");
     window.removeEventListener("scroll", onWhitePaper);
   }
