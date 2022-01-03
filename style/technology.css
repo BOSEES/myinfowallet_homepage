@@ -1,13 +1,13 @@
 /* background image */
 
 .why__container.list-1 > .why__img {
-  background-image: url("../images/주권.jpg");
+  background-image: url("../images/why_item1.jpg");
 }
 .why__container.list-2 > .why__img{
-  background-image: url("../images/탈중앙.jpg");
+  background-image: url("../images/why_item2.jpg");
 }
 .why__container.list-3 > .why__img{
-  background-image: url("../images/투명원장.webp");
+  background-image: url("../images/why_item3.webp");
 }
 
 /* banner */
